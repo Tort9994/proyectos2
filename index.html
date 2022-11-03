@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hey Clean</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta
+      name="viewport"
+      content="widht-device-widht, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="keywords"
+      content="Limpieza Textiles, desinfección Textiles, Limpieza Superficies"
+    />
+    <meta
+      name="description"
+      content="Expertos en limpieza profunda y desinfección de textiles, pieles y superficies duras"
+    />
+    <meta name="author" content="Luis Javier Martinez Fernandez" />
+    <link rel="shortcut icon" href="IMG/logito.png" type="image/x-icon" />
+
+    <script src="JS/modernizr-custom.js"></script>
+
+    <link rel="stylesheet" href="CSS/fuentes.css" />
+    <link rel="stylesheet" href="CSS/icomoon.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/hamburgers.css" />
+    <link rel="stylesheet" href="CSS/jquery.mb.YTPlayer.css" />
+    <link rel="stylesheet" href="CSS/modal-video.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- jQuery library -->
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="JS/bootstrap.min.js"></script>
+    <!--    <script src="JS/navigatorDetect.js" ></script>-->
+    <script src="JS/isotope.pkgd.min.js"></script>
+
+    <script src="JS/jquery.mb.YTPlayer.js"></script>
+
+    <script src="JS/float-panel.js"></script>
+
+    <script src="JS/modal-video.js"></script>
+  </head>
+  <body>
+    <!--   loader-->
+    <div id="loadercito">
+      <div id="contlogo">
+        <img id="loaderlogogito" src="IMG/logito.png" alt="" />
+        <div id="contletras">
+          <img id="loaderletras" src="IMG/letras.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div id="backmodal"></div>
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <header>
+      <div id="headerUp">
+        <figure>
+          <img src="IMG/logito.png" alt="logo" />
+          <div id="titulosLogo">
+            <p id="heyTi">Hey Clean!</p>
+            <p id="espaciosTi">Espacios Limpios</p>
+          </div>
+        </figure>
+
+        <button
+          id="menuButton"
+          class="hamburger hamburger--elastic"
+          type="button"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+
+      <nav id="myTopnav">
+        <ul>
+          <li>
+            <a href="#ahome" class="active" onclick="desactivarNav()">Home</a>
+          </li>
+          <li><a href="#aservicios" onclick="desactivarNav()">Servicios</a></li>
+          <li><a href="#agaleria" onclick="desactivarNav()">Galeria</a></li>
+          <li>
+            <a href="#asobre" onclick="desactivarNav()">Sobre Nosotros</a>
+          </li>
+          <li><a href="#asiguenos" onclick="desactivarNav()">Síguenos</a></li>
+          <li>
+            <a href="#acontacto" onclick="desactivarNav()"
+              ><span>&#xe958;</span>Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--SECCIONES DE LA PAGINA   -->
+    <div id="espacio"></div>
+    <!--  espacio para el header pagina-->
+
+    <section id="home" class="anchor">
+      <a name="ahome">&nbsp;</a>
+      <div id="carrusel">
+        <div
+          id="carouselIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="5000"
+          data-pause="false"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="imagenesSlider" id="primeraimagen"></div>
+              <div class="carousel-caption">
+                <h1 class="TituloMainSlider">Bienvenido a Hey Clean!</h1>
+                <p class="SecondTitleMainSlider">
+                  Con el propósito de otorgar espacios limpios y clientes
+                  satisfechos.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="imagenesSlider" id="segundaimagen"></div>
+              <div class="carousel-caption">
+                <h1 class="TituloMainSlider">Bienvenido a Hey Clean!</h1>
+                <p class="SecondTitleMainSlider">
+                  Limpieza profunda y mantenimiento de áreas, con nuestros
+                  productos ecológicos.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="imagenesSlider" id="terceraimagen"></div>
+              <div class="carousel-caption">
+                <h1 class="TituloMainSlider">Bienvenido a Hey Clean!</h1>
+                <p class="SecondTitleMainSlider">
+                  Maquinaria profesional, operados por personal capacitado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div id="P1" class="player"></div>
+    </section>
+
+    <section id="servicios" class="anchor">
+      <a name="aservicios">&nbsp;</a>
+      <div id="serviciosVista" class="wraper">
+        <div id="serviciosInfo">
+          <h2>Servicios</h2>
+          <p>
+            Somos expertos en limpieza profunda y desinfección de textiles,
+            pieles y superficies duras.
+          </p>
+        </div>
+        <div id="showServices">
+          <div id="EmpresarialesItem" class="servicesItem">
+            <div class="itemImagen">
+              <img src="IMG/34.jpg" alt="" />
+            </div>
+            <div class="itemDesc">
+              <span>&#xe910;</span>
+              <p>Servicios Empresariales</p>
+            </div>
+          </div>
+          <div id="TapiceriasItem" class="servicesItem">
+            <div class="itemImagen">
+              <img src="IMG/32.jpg" alt="" />
+            </div>
+            <div class="itemDesc">
+              <span>&#xe91f;</span>
+              <p>Lavado de Tapicerías</p>
+            </div>
+          </div>
+          <div id="HogarItem" class="servicesItem">
+            <div class="itemImagen">
+              <img src="IMG/33.jpg" alt="" />
+            </div>
+            <div class="itemDesc">
+              <span>&#xe913;</span>
+              <p>Servicios para el Hogar</p>
+            </div>
+          </div>
+          <div id="ColchonesItem" class="servicesItem">
+            <div class="itemImagen">
+              <img src="IMG/14.jpg" alt="" />
+            </div>
+            <div class="itemDesc">
+              <span>&#xe902;</span>
+              <p>Lavado de Colchones</p>
+            </div>
+          </div>
+          <div id="AlfombrasItem" class="servicesItem">
+            <div class="itemImagen">
+              <img src="IMG/19.jpg" alt="" />
+            </div>
+            <div class="itemDesc">
+              <span>&#xe90f;</span>
+              <p>Lavado de Alfombras</p>
+            </div>
+          </div>
+          <div id="AutosItem" class="servicesItem">
+            <div class="itemImagen">
+              <img src="IMG/25.jpg" alt="" />
+            </div>
+            <div class="itemDesc">
+              <span>&#xe94f;</span>
+              <p>Lavado de interiores de Autos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="galeria" class="anchor">
+      <a name="agaleria">&nbsp;</a>
+      <div class="wraper">
+        <div class="iso-nav">
+          <ul>
+            <li class="active" data-filter="*">Todos</li>
+            <li data-filter=".empresas">Servicios Empresariales</li>
+            <li data-filter=".tapicerias">Lavado de Tapicerías</li>
+            <li data-filter=".hogar">Servicios para el Hogar</li>
+            <li data-filter=".colchones">Lavado de Colchones</li>
+            <li data-filter=".alfombras">Lavado de Alfombras</li>
+            <li data-filter=".autos">Lavado de interiores de Autos</li>
+          </ul>
+        </div>
+        <div id="textoGaleria">
+          <div class="infoRegions">
+            <h3>TODOS NUESTROS SERVICIOS</h3>
+            <p>
+              Selecciona alguna categoria para filtrar los elementos y ver su
+              descripción.
+            </p>
+          </div>
+          <div class="infoRegions">
+            <h3>SERVICIOS EMPRESARIALES</h3>
+            <p>
+              Restaurantes, hoteles, oficinas, salones. Lavado de superficies de
+              tapicería en colchones, muebles, cortinas y alfombras.
+            </p>
+          </div>
+          <div class="infoRegions">
+            <h3>LAVADO DE TAPICERÍAS</h3>
+            <p>
+              Limpieza a profundidad de salas, muebles, cortinas , tapetes ,
+              alfombras, colchones, cunas y cama de mascotas.
+            </p>
+          </div>
+          <div class="infoRegions">
+            <h3>SERVICIOS PARA EL HOGAR</h3>
+            <p>
+              Limpieza, mantenimiento y desinfección en muebles de tela o piel,
+              cortinas, colchones, áreas infantiles y más.
+            </p>
+          </div>
+          <div class="infoRegions">
+            <h3>LAVADO DE COLCHONES</h3>
+            <p>
+              Limpieza y sanitizacion de colchones, eliminamos ácaros, olores,
+              manchas, orina y sangre.
+            </p>
+          </div>
+          <div class="infoRegions">
+            <h3>LAVADO DE ALFOMBRAS</h3>
+            <p>
+              Lavado de alfombras con nuestro equipo de última generación en
+              inyección y succión. 
+            </p>
+          </div>
+          <div class="infoRegions">
+            <h3>LAVADO EN INTERIORES DE AUTO</h3>
+            <p>
+              Prolongando la vida de tus interiores, lavado, desmanchado y
+              desinfección de los interiores de tu vehículo: Asientos de tela o
+              piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero,
+              cielo Razo y cinturones de seguridad.
+            </p>
+          </div>
+        </div>
+        <div class="main-iso">
+          <div class="item empresas">
+            <div class="imgFilter2 videoModal" data-video-id="wL-n8ItZoYg">
+              <figure>
+                <img
+                  data-video-id="2tJIgwdhRjE"
+                  alt="SERVICIOS EMPRESARIALES, Restaurantes, hoteles, oficinas, salones. Lavado de superficies de tapicería en colchones, muebles, cortinas y alfombras."
+                  src="https://img.youtube.com/vi/wL-n8ItZoYg/hqdefault.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item empresas">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS EMPRESARIALES, Restaurantes, hoteles, oficinas, salones. Lavado de superficies de tapicería en colchones, muebles, cortinas y alfombras."
+                  src="IMG/34.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item empresas">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS EMPRESARIALES, Restaurantes, hoteles, oficinas, salones. Lavado de superficies de tapicería en colchones, muebles, cortinas y alfombras."
+                  src="IMG/35.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="item empresas">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS EMPRESARIALES, Restaurantes, hoteles, oficinas, salones. Lavado de superficies de tapicería en colchones, muebles, cortinas y alfombras."
+                  src="IMG/42.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item empresas">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS EMPRESARIALES, Restaurantes, hoteles, oficinas, salones. Lavado de superficies de tapicería en colchones, muebles, cortinas y alfombras."
+                  src="IMG/49.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item empresas">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS EMPRESARIALES, Restaurantes, hoteles, oficinas, salones. Lavado de superficies de tapicería en colchones, muebles, cortinas y alfombras."
+                  src="IMG/1.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/6.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/8.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/20.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/29.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/44.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/45.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/4.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item tapicerias">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE TAPICERÍAS, Limpieza a profundidad de salas, muebles, cortinas , tapetes , alfombras, colchones, cunas y cama de mascotas."
+                  src="IMG/53.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item hogar">
+            <div class="imgFilter2 videoModal" data-video-id="V4VoRl1TOYY">
+              <figure>
+                <img
+                  alt="SERVICIOS PARA EL HOGAR, Limpieza, mantenimiento y desinfección en muebles de tela o piel, cortinas, colchones, áreas infantiles y más. "
+                  src="https://img.youtube.com/vi/V4VoRl1TOYY/hqdefault.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item hogar">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS PARA EL HOGAR, Limpieza, mantenimiento y desinfección en muebles de tela o piel, cortinas, colchones, áreas infantiles y más. "
+                  src="IMG/33.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item hogar">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS PARA EL HOGAR, Limpieza, mantenimiento y desinfección en muebles de tela o piel, cortinas, colchones, áreas infantiles y más. "
+                  src="IMG/37.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item hogar">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS PARA EL HOGAR, Limpieza, mantenimiento y desinfección en muebles de tela o piel, cortinas, colchones, áreas infantiles y más. "
+                  src="IMG/38.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item hogar">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS PARA EL HOGAR, Limpieza, mantenimiento y desinfección en muebles de tela o piel, cortinas, colchones, áreas infantiles y más. "
+                  src="IMG/39.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item hogar">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS PARA EL HOGAR, Limpieza, mantenimiento y desinfección en muebles de tela o piel, cortinas, colchones, áreas infantiles y más. "
+                  src="IMG/40.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item hogar">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="SERVICIOS PARA EL HOGAR, Limpieza, mantenimiento y desinfección en muebles de tela o piel, cortinas, colchones, áreas infantiles y más. "
+                  src="IMG/51.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item colchones">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE COLCHONES, Limpieza y sanitizacion de colchones, eliminamos ácaros, olores, manchas, orina y sangre."
+                  src="IMG/11.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item colchones">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE COLCHONES, Limpieza y sanitizacion de colchones, eliminamos ácaros, olores, manchas, orina y sangre."
+                  src="IMG/5.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item colchones">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE COLCHONES, Limpieza y sanitizacion de colchones, eliminamos ácaros, olores, manchas, orina y sangre."
+                  src="IMG/43.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item colchones">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE COLCHONES, Limpieza y sanitizacion de colchones, eliminamos ácaros, olores, manchas, orina y sangre."
+                  src="IMG/46.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item colchones">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE COLCHONES, Limpieza y sanitizacion de colchones, eliminamos ácaros, olores, manchas, orina y sangre."
+                  src="IMG/48.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item alfombras">
+            <div class="imgFilter2 videoModal" data-video-id="-QnOBSR2vvI">
+              <figure>
+                <img
+                  alt="LAVADO DE ALFOMBRAS, Lavado de alfombras con nuestro equipo de última generación en inyección y succión."
+                  src="https://img.youtube.com/vi/-QnOBSR2vvI/hqdefault.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+
+          <div class="item alfombras">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE ALFOMBRAS, Lavado de alfombras con nuestro equipo de última generación en inyección y succión."
+                  src="IMG/7.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item alfombras">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE ALFOMBRAS, Lavado de alfombras con nuestro equipo de última generación en inyección y succión."
+                  src="IMG/10.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item alfombras">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE ALFOMBRAS, Lavado de alfombras con nuestro equipo de última generación en inyección y succión."
+                  src="IMG/19.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item alfombras">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO DE ALFOMBRAS, Lavado de alfombras con nuestro equipo de última generación en inyección y succión."
+                  src="IMG/41.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter2 videoModal" data-video-id="Z6OfZzVk1b8">
+              <figure>
+                <img
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="https://img.youtube.com/vi/Z6OfZzVk1b8/hqdefault.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter2 videoModal" data-video-id="KcKnGL8fBqM">
+              <figure>
+                <img
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="https://img.youtube.com/vi/KcKnGL8fBqM/hqdefault.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="IMG/16.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="IMG/17.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="IMG/21.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="IMG/25.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="IMG/2.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="item autos">
+            <div class="imgFilter">
+              <figure>
+                <img
+                  class="imagenModal"
+                  alt="LAVADO EN INTERIORES DE AUTO, Prolongando la vida de tus interiores, lavado, desmanchado y desinfección de los interiores de tu vehículo: Asientos de tela o piel, respaldos, tapetes, cajuela, alfombras, molduras, tablero, cielo Razo y cinturones de seguridad."
+                  src="IMG/26.jpg"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="anchor">
+      <a name="asobre">&nbsp;</a>
+      <div id="wrapperSobre">
+        <h2 class="slideanim">Misión</h2>
+        <p class="slideanim">
+          Brindar un servicio de limpieza profesional, a fin de satisfacer las
+          necesidades de cada cliente, desarrollando los procesos de una manera
+          eficiente por nuestro personal altamente capacitado, otorgando un
+          servicio confiable y de calidad para ser siempre tu mejor opción.
+        </p>
+      </div>
+    </section>
+    <section id="vision" class="anchor">
+      <a name="avision">&nbsp;</a>
+      <h2 class="slideanim">Visión</h2>
+      <p class="slideanim">
+        Expandir nuestros servicios de limpieza profesional destacando por
+        nuestra calidad en el servicio, buscando la fidelización de nuestros
+        clientes
+      </p>
+    </section>
+    <section id="acercade" class="anchor">
+      <a name="aacercade">&nbsp;</a>
+      <div id="wrapperAcerca">
+        <h2 class="slideanim">Acerca De</h2>
+        <p class="slideanim">
+          Somos un grupo de profesionales dedicados a brindar servicios
+          integrales de limpieza y mantenimiento empresarial o doméstico,
+          tenemos cobertura en toda la península de Yucatán Brindamos a nuestros
+          clientes servicios integrales de limpieza y mantenimiento a sus areas,
+          creando espacios más limpios y agradables para todos.
+        </p>
+        <p class="slideanim">
+          Nuestra responsabilidad con el medio ambiente es prioridad para
+          nosotros, por eso nuestros productos son biodegradables. Nos hacemos
+          cargo del reclutamiento y capacitación del personal a tu servicio y
+          damos seguimiento a los procesos con nuestros supervisores internos.
+        </p>
+      </div>
+    </section>
+    <section id="siguenos" class="anchor">
+      <a name="asiguenos">&nbsp;</a>
+      <div id="wrapperSiguenos">
+        <h2>¡Síguenos en nuestras Redes!</h2>
+        <!--SECCION REDES SOCIALES   -->
+        <div id="redesSociales">
+          <a href="https://www.facebook.com/Heyclean/"></a>
+          <a href="https://www.instagram.com/heycleanmx/"></a>
+          <a
+            href="https://www.youtube.com/channel/UCYJBV6YSZLBNQJlsa_7RGOQ"
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="anchor">
+      <a name="acontacto">&nbsp;</a>
+      <!-- division para la animacion del home -->
+      <div class="animation">
+        <div id="particles-js"></div>
+      </div>
+      <div id="wrapperContacto">
+        <div id="contactoTitulo" class="elemIcon">
+          <span>&#xe911; </span>
+          <h2>CONTACTO</h2>
+        </div>
+        <p>
+          Mantente en Contacto con Nosotros. Marcanos a nuestro telefono o
+          escríbenos un mensaje comentanos tus dudas o sugerencias y nos
+          comunicaremos contigo a la brevedad.
+        </p>
+        <p id="nuestroTel">
+          Nuestro Teléfono:
+          <a href="tel:999-352-2085">9993522085</a>
+        </p>
+        <div id="formularioCont">
+          <form id="formulario" action="PHP/contact.php" method="post">
+            <div id="soloInputs">
+              <div class="formCampo">
+                <label for="nombre">Nombre:</label>
+                <input
+                  name="nombre"
+                  type="text"
+                  placeholder="Tu Nombre Completo"
+                  required
+                />
+              </div>
+              <div class="formCampo">
+                <label for="correo">Correo:</label>
+                <input
+                  name="correo"
+                  type="email"
+                  placeholder="Tu Correo"
+                  required
+                />
+              </div>
+              <div class="formCampo">
+                <label for="telefono">Teléfono:</label>
+                <input
+                  name="telefono"
+                  type="tel"
+                  placeholder="Tu telefono"
+                  required
+                />
+              </div>
+            </div>
+            <div class="formCampo">
+              <label for="mensaje">Mensaje:</label>
+              <textarea
+                name="mensaje"
+                placeholder="Tu mensaje"
+                cols="30"
+                rows="7"
+                required
+              ></textarea>
+            </div>
+            <div class="formCampo">
+              <input name="enviar" type="submit" value="Enviar" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="wrapperFooter">
+        <p>© Copyright 2018 Hey Clean - All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="JS/servicesScript.js"></script>
+    <script src="JS/imagesloaded.pkgd.js"></script>
+    <script src="JS/scriptIndex.js"></script>
+    <script src="JS/modal.js"></script>
+    <script src="JS/detectInternetExplorer.js"></script>
+    <script src="JS/loader.js"></script>
+    <script src="JS/particles.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/videoIntro.js"></script>
+    <script src="JS/videoModalOptions.js"></script>
+  </body>
+</html>
